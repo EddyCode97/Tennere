@@ -8,7 +8,7 @@ class PostEntriesState extends ChangeNotifier {
     _postEntries.add(i);
   }
 
-  List<PostEntry> getImageEntries() {
+  List<PostEntry> getPostEntries() {
     return _postEntries;
   }
 }

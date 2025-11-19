@@ -9,7 +9,7 @@ class ChatScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final images = Provider.of<PostEntriesState>(context).getImageEntries();
+    final images = Provider.of<PostEntriesState>(context).getPostEntries();
     return Scaffold(body: Center(child: images.isNotEmpty? Image.file(File(images[0].getFrontImage().path)) : Text("Chat")));
   }
 }
